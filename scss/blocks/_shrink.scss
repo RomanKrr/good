@@ -1,0 +1,55 @@
+.header__shrink {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+
+
+    img{
+        width: 22px;
+        height: 22px;
+
+        &:hover{
+            transform: scale(1.25);
+        }
+    }
+}
+
+.header__shrink-loop {
+    max-width: 500px;
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    border-radius: 25px;
+    display: none;
+}
+
+.header__shrink-loop.active{
+    display: block;
+    position: absolute;
+    right: 110%; 
+    top: 100%;
+    z-index: 6;
+}
+.loop{
+    cursor: pointer;
+}
+.header__shrink-basket{
+    position: relative;
+}
+.basket{
+    position: relative;
+}
+
+.counter{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $orange;
+    border-radius: 50%;
+    padding: 4px 5px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
